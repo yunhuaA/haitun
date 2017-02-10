@@ -1,1 +1,39 @@
-iiiiiiiiiiiiiiifirst
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8" />
+	<title>海豚哆哆-高端定制旅游</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+</head>
+<body>
+	<div ng-view>
+		
+	</div>	
+	<div id="footer" ng-controller="MainCtrl as mainCtrl">
+		<ul>
+			<li><a href="#/home">
+				<img src="imgs/icon_01.png"/>
+				<span>首页</span></a></li>
+			<li><a href="#/consult">
+				<img src="imgs/icon_02.png"/>
+				<span>咨询</span></a></li>
+			<li><a href="#/customization">
+				<img src="imgs/icon_03.png"/>
+				<span>定制</span></a></li>
+			<li><a href="#/stick">
+				<img src="imgs/icon_04.png"/>
+				<span>置顶</span>
+			</a></li>
+		</ul>
+	</div>
+
+
+<!--导入需要的内容-->
+<script src="lib/angular.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/angular-css.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/angular-route.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
