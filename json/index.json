@@ -1,0 +1,130 @@
+{   
+        "address": [
+            {
+                "traval": {
+                    "name": "澳洲东海岸精华",
+                    "img": "http://m.dearisland.com/upload/image/20170124/20170124094545_87964.jpg",
+                    "span":"心形大堡焦/拥抱考拉"
+                }
+            },
+            {
+                "traval": {
+                    "name": "澳洲东海岸精华",
+                    "img": "http://m.dearisland.com/upload/image/20170124/20170124094545_87964.jpg",
+                    "span":"心形大堡焦/拥抱考拉"
+                }
+            },
+            {
+                "traval": {
+                    "name": "澳洲东海岸精华",
+                    "img": "http://m.dearisland.com/upload/image/20170124/20170124094545_87964.jpg",
+                    "span":"心形大堡焦/拥抱考拉"
+                }
+            },
+            {
+                "traval": {
+                    "name": "澳洲东海岸精华",
+                    "img": "http://m.dearisland.com/upload/image/20170124/20170124094545_87964.jpg",
+                    "span":"心形大堡焦/拥抱考拉"
+                }
+            },
+            {
+                "traval": {
+                    "name": "澳洲东海岸精华",
+                    "img": "http://m.dearisland.com/upload/image/20170124/20170124094545_87964.jpg",
+                    "span":"心形大堡焦/拥抱考拉"
+                }
+            }
+        ],
+    "hotAddress" :[
+    	{
+    		
+    	"hot" : {
+    		"title" : "澳大利亚",
+    		"src" : "http://www.dearisland.com/images/m/p-2-1.png"
+    	
+    		}
+    	},
+    	{
+    	"hot" : {
+    		"title" : "新西兰",
+    		"src" : "http://www.dearisland.com/images/m/p-2-1.png"
+    	
+    	
+    		}
+    	},
+    	{
+    		
+    	"hot" : {
+    		"title" : "纽西兰",
+    		"src" : "http://www.dearisland.com/images/m/p-2-1.png"
+    	
+    		}
+    	},
+    	{
+    		
+    	"hot" : {
+    		"title" : "蛇塞尔",
+    		"src" : "http://www.dearisland.com/images/m/p-2-1.png"
+    	
+    		}
+    	},
+    	{
+    		
+    	"hot" : {
+    		"title" : "沙溪",
+    		"src" : "http://www.dearisland.com/images/m/p-2-1.png"
+    	
+    		}
+    	},
+    	{
+    		
+    	"hot" : {
+    		"title" : "巴厘岛",
+    		"src" : "http://www.dearisland.com/images/m/p-2-1.png"
+    	
+    		}
+    	}
+      
+    ],
+    "topTravel": [
+            {
+                "traval": {
+                    "title": "顶级度假",
+                    "img": "http://www.dearisland.com/upload/image/20170124/20170124094717_87456.jpg",
+                    "span":"全程水飞直达"
+                }
+            },
+            {
+                "traval": {
+                    "title": "顶级度假",
+                    "img": "http://www.dearisland.com/upload/image/20170124/20170124094717_87456.jpg",
+                    "span":"全程水飞直达"
+                }
+            },
+            {
+                "traval": {
+                    "title": "澳洲东海岸精华",
+                    "img": "http://www.dearisland.com/upload/image/20170124/20170124094717_87456.jpg",
+                    "span":"全程水飞直达"
+                }
+            },
+            {
+                "traval": {
+                    "title": "澳洲东海岸精华",
+                    "img": "http://www.dearisland.com/upload/image/20170124/20170124094717_87456.jpg",
+                    "span":"全程水飞直达"
+                }
+            },
+            {
+                "traval": {
+                    "title": "澳洲东海岸精华",
+                    "img": "http://www.dearisland.com/upload/image/20170124/20170124094717_87456.jpg",
+                    "span":"全程水飞直达"
+                }
+            }
+        ]
+
+    
+      
+}

@@ -1,26 +1,39 @@
+@charset "utf-8";
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
+
+body{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
 a{
 	text-decoration: none;
 }
-ul li{
+
+ul,li{
 	list-style: none;
 }
 
 #footer{
 	position: fixed;
-	width: 100%;
-	height: 50px;
 	left: 0;
 	bottom: 0;
+	height: 1.33rem;
+	line-height: 1.33rem;
 	background-color: #fafaf8;
+	font-size: 0.37rem;
+	width: 100%;
 }
+
 #footer ul{
 	display: flex;
-	flex-flow: nowrap;
+	justify-content: space-around;
 }
 #footer ul li{
 	width: 25%;
@@ -47,3 +60,16 @@ ul li{
 	color: #000100;
 }
 
+/* footer不隐藏时候的样式 */
+.class1{
+	/*background-color: yellow;*/
+	/* calc运算函数 */
+	height: calc(100% - 1.33rem);
+}
+
+/* footer隐藏时候的样式 */
+.class2{
+	background-color: #f7f8fa;
+	height: 100%;
+
+}

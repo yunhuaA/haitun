@@ -1,24 +1,46 @@
 //主入口文件
-angular.module("myApp",["ngRoute","angularCSS"])
-	//配置路由,使用routeProvider配置路由规则
-	.config(["$routeProvider",function($routeProvider){
-		$routeProvider.when("/home",{
-			//当路由对应的锚点为home时，链接到页面
-			tempalteURL : "./html/home.html",
-			controller : "HomeCtrl as homeCtrl"
-			
+//依赖于路由和css两个模块
+angular.module('myApp', ['ngRoute', 'angularCSS'])
+	//run方法，是在模块加载的时候初始化一些功能
+	.run(['$window', '$rootScope' , function ($window, $rootScope) {
+		//$window 相当于原生的window对象
+		//$rootScope 全局作用域，用于存储全局变量，在任何地方都可以使用
+		/*
+		 * $rootScope.$on 可以监听一些事件，在这里监听的是浏览器地址的变化
+		 * $locationChangeSuccess 浏览器地址变化成功后处理的逻辑
+		 */
+		$rootScope.$on('$locationChangeSuccess', function () {
+			//如果浏览器地址包含 market（闪送超市）那么就隐藏footer
+			if ($window.location.href.indexOf('market') != -1) {
+				$rootScope.rootIsFooterShow = false;
+			} else {
+				$rootScope.rootIsFooterShow = true;
+			}
+		});
+	}])
+	.config(['$routeProvider', function ($routeProvider) {
+		$routeProvider.when('/home', {
+//			template : '<h1>首页</h1>',
+			templateUrl : './view/home.html',
+			controller : 'HomeCtrl as homeCtrl'
 		})
-		.when("/consult",{
-			templateURL : "./consult.html",
-			controller : "ConsultCtrl as consultCtrl"
+		.when('/market', {
+//			template : '<h1>闪送超市</h1>',
+			templateUrl : './view/market.html',
+			controller : 'MarketCtrl as marketCtrl'
 		})
-		.when("/customization",{
-			templateURL : "./customization.html",
-			controller : "CustomizationCtrl as customizationCtrl"
+		//带参数 (name和age是形参，不要忘记冒号)
+		.when('/cart/:name/:age', {
+//			template : '<h1>购物车</h1>'
+			templateUrl : './view/cart.html',
+			controller : 'CartCtrl as cartCtrl'
 		})
-		.when("/stick",{
-			templateURL : "./stick.html",
-			controller : "StickCtrl as stickCtrl"
+		.when('/mine', {
+//			template : '<h1>我的</h1>'
+			templateUrl : './view/home.html',
+			controller : 'MineCtrl as mineCtrl'
 		})
-		
+		.otherwise({
+			redirectTo : '/home'
+		})
 	}])
